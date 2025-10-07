@@ -1,0 +1,101 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  background-color: rgb(1, 54, 54);
+  color: white;
+  
+  padding-right: 50px;
+  padding-left: 50px;
+  position: relative;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav a {
+  font-size: 18px;
+}
+
+
+.burger-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  
+  background-color: rgba(1, 54, 54);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  z-index: 1000;
+  transition:  0.3s ease;
+}
+
+.mobile-nav.open {
+  display: flex;
+}
+
+.mobile-nav a {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+
+.mobile-nav a:hover{
+  transform: scale(1.005);
+  transition: 0.15s ease;
+  color: aquamarine;
+  
+}
+
+.mobile-nav a:active{
+  transform: scale(0.99);
+  transition: 0.15s ease;
+  color: rgb(66, 160, 129);
+  
+}
+
+
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 589px) {
+  .nav {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+  }
+}
