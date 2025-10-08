@@ -1,0 +1,44 @@
+.testimony-section {
+  width: 40vw;
+  margin: auto;
+  height: 50vh; 
+  overflow: hidden; 
+  padding: 10px; 
+  background-color: rgb(74, 76, 75);
+  border-radius: 50px;
+}
+.test-title{
+    display: flex;
+    justify-content: center;
+}
+.testimony-slide{
+    width: 500px;
+    height: 10vh;
+}
+.test-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.test-card img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+.prev {
+    width: 100px;
+    height: 30px;
+}
+.next{
+    width: 100px;
+    height: 30px;
+}
