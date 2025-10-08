@@ -25,19 +25,28 @@ const App = () => {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
-        gap: "20px",
-        padding: "40px",
-        backgroundColor: "#f5f5f5",
+        
+        
+        
       }}  
       >
         <>
           <Hero/>
           <Destinations/>
-          <Testimonials/>
         </>
-      {countries.map((item, index) => (
-        <GalleryCard key={index} imageUrl={item.imageUrl} country={item.country} />
-      ))}
+        <div className='test-gal'>
+          <div>
+            <Testimonials/>
+          </div>
+          
+          <div className='gall'>
+            {countries.map((item, index) => (
+            <GalleryCard key={index} imageUrl={item.imageUrl} country={item.country} />
+          ))}
+          </div>
+          
+        </div>
+
     </div>
       <div>
         <Footer />
