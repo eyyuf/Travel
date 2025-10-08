@@ -2,6 +2,9 @@ import React from 'react'
 import Navbar from './Componenets/navbar/Navbar'
 import Footer from './Componenets/footer/footer'
 import GalleryCard from './Componenets/GalleryCard/GalleryCard'
+import Hero from './Componenets/hero/Hero'
+import Destinations from './Componenets/destinations/Destinations'
+import Testimonials from './Componenets/testimonials/Testimonials'
 
 const App = () => {
    const countries = [
@@ -25,8 +28,13 @@ const App = () => {
         gap: "20px",
         padding: "40px",
         backgroundColor: "#f5f5f5",
-      }}
-    >
+      }}  
+      >
+        <>
+          <Hero/>
+          <Destinations/>
+          <Testimonials/>
+        </>
       {countries.map((item, index) => (
         <GalleryCard key={index} imageUrl={item.imageUrl} country={item.country} />
       ))}
