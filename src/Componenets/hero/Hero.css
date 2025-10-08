@@ -1,44 +1,38 @@
-*{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 .hero {
-  width: 100vw;
-  height: auto; 
- 
+  width: 100vw;       /* full viewport width */
+  height: 80vh;       /* or whatever height you want */
+  position: relative;
+  margin: 0;          /* remove any default margin */
 }
 
 .hero img {
-  width: 100%;
-  height: 80vh;
-  object-fit: cover;
-  object-position: center;
-  margin-top: 50px;
-
+  width: 100%;        /* cover full width */
+  height: 100%;       /* cover full height */
+  object-fit: cover;  /* scale and crop nicely */
+  display: block;     /* remove inline gaps */
 }
-.overlay{
+
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 46vh;
-  background: rgba(0, 0, 0, 0.4);
-  transition: all 1s ease-in-out;
-  padding-top: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35); /* see hero + navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 50px;
-  
-}
-.hero-title{
-  font-size: 48px;
-  color:white;
-
-}
-.hero-desc{
-
-  left: 0;
   color: white;
-  font-size: 24px;
+}
 
- 
- 
-  
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-desc {
+  font-size: 24px;
 }
