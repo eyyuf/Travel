@@ -23,7 +23,7 @@ function Testimonial() {
 
   return (
     <div className="testimony-section">
-      <h2 className="test-title">Popular Destinations</h2>
+      <h2 className="test-title">Testimonies</h2>
 
       <div className="testimony-slide">
         <div className="test-card">

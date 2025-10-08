@@ -1,44 +1,68 @@
 .testimony-section {
   width: 40vw;
-  margin: auto;
-  height: 50vh; 
-  overflow: hidden; 
-  padding: 10px; 
+  margin: 50px auto; /* center + space above/below */
+  padding: 20px;
   background-color: rgb(74, 76, 75);
-  border-radius: 50px;
+  border-radius: 30px;
+  text-align: center;
 }
-.test-title{
-    display: flex;
-    justify-content: center;
+
+.test-title {
+  margin-bottom: 20px;
 }
-.testimony-slide{
-    width: 500px;
-    height: 10vh;
+
+.testimony-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 20px;
 }
-.test-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.test-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
-.test-card img{
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.test-card img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
 }
-.btn{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 150px;
+
+.test-info h3 {
+  margin: 0;
+  color: #fff;
 }
-.prev {
-    width: 100px;
-    height: 30px;
+
+.test-info p {
+  color: #ddd;
+  margin: 0;
+  font-size: 0.9rem;
 }
-.next{
-    width: 100px;
-    height: 30px;
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin: auto;
+}
+
+.prev,
+.next {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #555;
 }
