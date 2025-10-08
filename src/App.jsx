@@ -8,7 +8,7 @@ const App = () => {
     { imageUrl: "https://picsum.photos/400/300?1", country: "Japan" },
     { imageUrl: "https://picsum.photos/400/300?2", country: "Italy" },
     { imageUrl: "https://picsum.photos/400/300?3", country: "Ethiopia" },
-    { imageUrl: "https://picsum.photos/400/300?4", country: "Brazil" }
+    { imageUrl: "https://picsum.photos/600/300?4", country: "Brazil" }
   ];
 
 
@@ -26,7 +26,7 @@ const App = () => {
         padding: "40px",
         backgroundColor: "#f5f5f5",
       }}
-    >
+      >
       {countries.map((item, index) => (
         <GalleryCard key={index} imageUrl={item.imageUrl} country={item.country} />
       ))}

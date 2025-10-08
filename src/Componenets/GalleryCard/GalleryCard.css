@@ -25,7 +25,6 @@
   transform: scale(1.1);
 }
 
-/* Overlay for country name */
 .gallery-card__overlay {
   position: absolute;
   bottom: 0;
