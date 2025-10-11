@@ -1,7 +1,7 @@
 import React from "react";
 import "./GalleryCard.css";
 
-function GalleryCard({ imageUrl, country }) {
+const GalleryCard = ({ imageUrl, country }) => {
   return (
     <div className="gallery-card">
       <img src={imageUrl} alt={country} className="gallery-card__image" />
@@ -10,6 +10,6 @@ function GalleryCard({ imageUrl, country }) {
       </div>
     </div>
   );
-}
+};
 
 export default GalleryCard;

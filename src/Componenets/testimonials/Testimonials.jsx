@@ -35,8 +35,8 @@ function Testimonial() {
         </div>
       </div>
       <div className="btn">
-        <button className="prev" onClick={prevSlide}>Previous</button>
-        <button className="next"onClick={nextSlide}>Next</button>
+        <button className="prev" onClick={prevSlide}> &#60;</button>
+        <button className="next"onClick={nextSlide}>&gt;</button>
       </div>
       
     </div>

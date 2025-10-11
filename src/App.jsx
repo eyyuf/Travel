@@ -24,26 +24,17 @@ const App = () => {
       <div className="test-gal">
         <Testimonials />
 
-        <div
-          className="gall"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            gap: "20px",
-            padding: "40px",
-            backgroundColor: "#f5f5f5",
-          }}
-        >
+        <div className="gallery-section">
           {countries.map((item, index) => (
             <GalleryCard
               key={index}
               imageUrl={item.imageUrl}
               country={item.country}
             />
-          ))}
+         ))}
         </div>
-      </div>
+</div>
+      
 
       <Footer />
     </div>
